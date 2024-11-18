@@ -2,6 +2,8 @@
 import MultipleDataTypes from '@/components/MultipleDataTypes.vue';
 import TaskList from '../components/TaskList.vue';
 import ExerciceCondition from '@/components/exercice-condition.vue';
+import ExerciceDataBinding from '@/components/exercice-dataBinding.vue';
+import Compteur from '@/components/compteur.vue';
 </script>
 
 <template>
@@ -10,5 +12,7 @@ import ExerciceCondition from '@/components/exercice-condition.vue';
     <TaskList />
     <MultipleDataTypes />
     <ExerciceCondition />
+    <ExerciceDataBinding />
+    <Compteur />
   </div>
 </template>
