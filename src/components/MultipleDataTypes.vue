@@ -1,10 +1,9 @@
 <template>
-  <div id="taskList">
-    <input v-model="newTask" />
-    <button v-on:click="addTask(newTask)">Ajouter</button>
-    <ul>
-      <li v-for="task in tasks">{{ task }}</li>
-    </ul>
+  <div id="list_data_types" class="d-flex flex-column align-items-center p-2">
+    <p>{{ myString }}</p>
+    <p>{{ myInt }}</p>
+    <p>{{ myArray }}</p>
+    <p>{{ myObject }}</p>
   </div>
 </template>
 
@@ -12,7 +11,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'TaskList',
+  name: 'MultipleDataTypes',
   /* components: {
   },
   props: {
@@ -27,20 +26,11 @@ export default defineComponent({
   }, */
   data() {
     return {
-      newTask: "",
-      tasks: [
-        "ceci est la tache 1",
-        "ceci est la tache 2",
-        "ceci est la tache 3",
-      ]
+      myString: "chaine de caractères",
+      myInt:  1234567890,
+      myArray: ['array_index_0','array_index_1','array_index_2'],
+      myObject: {prop1: 'value_1',prop2: 'value_2',prop3: 'value_3'}
     };
-  },
-  methods: {
-    addTask(newTask) {
-      if (newTask != "") {
-        this.tasks.push(newTask);
-      }
-    }
   },
   /* computed: {
     value: {
@@ -70,12 +60,13 @@ export default defineComponent({
     // stop the wacher on modelValue
     this.$watch('modelValue', () => {}, {});
   }, */
+  methods: {
+  },
 });
 </script>
 
 <style scoped lang="css">
-  #taskList {
-    background-color: bisque;
-    padding: 1.5rem;
+  #list_data_types {
+    background-color: aliceblue;
   }
 </style>

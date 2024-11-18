@@ -1,10 +1,6 @@
 <template>
-  <div id="taskList">
-    <input v-model="newTask" />
-    <button v-on:click="addTask(newTask)">Ajouter</button>
-    <ul>
-      <li v-for="task in tasks">{{ task }}</li>
-    </ul>
+  <div>
+    <p>{{ affichageConditionnel() }}</p>
   </div>
 </template>
 
@@ -12,7 +8,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'TaskList',
+  name: 'ExerciceCondition',
   /* components: {
   },
   props: {
@@ -27,20 +23,7 @@ export default defineComponent({
   }, */
   data() {
     return {
-      newTask: "",
-      tasks: [
-        "ceci est la tache 1",
-        "ceci est la tache 2",
-        "ceci est la tache 3",
-      ]
     };
-  },
-  methods: {
-    addTask(newTask) {
-      if (newTask != "") {
-        this.tasks.push(newTask);
-      }
-    }
   },
   /* computed: {
     value: {
@@ -70,12 +53,13 @@ export default defineComponent({
     // stop the wacher on modelValue
     this.$watch('modelValue', () => {}, {});
   }, */
+  methods: {
+    affichageConditionnel() {
+      return Math.random() > 0.5 ? "Jambon" : "Fromage";
+    }
+  },
 });
 </script>
 
 <style scoped lang="css">
-  #taskList {
-    background-color: bisque;
-    padding: 1.5rem;
-  }
 </style>
