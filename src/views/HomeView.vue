@@ -4,6 +4,8 @@ import TaskList from '../components/TaskList.vue';
 import ExerciceCondition from '@/components/exercice-condition.vue';
 import ExerciceDataBinding from '@/components/exercice-dataBinding.vue';
 import Compteur from '@/components/compteur.vue';
+import DetectionEvent from '@/components/detection-event.vue';
+import ExerciceEventBinding from '@/components/exercice-eventBinding.vue';
 </script>
 
 <template>
@@ -14,5 +16,7 @@ import Compteur from '@/components/compteur.vue';
     <ExerciceCondition />
     <ExerciceDataBinding />
     <Compteur />
+    <DetectionEvent />
+    <ExerciceEventBinding />
   </div>
 </template>
