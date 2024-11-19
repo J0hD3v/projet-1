@@ -9,6 +9,9 @@ import ExerciceEventBinding from '@/components/exercice-eventBinding.vue';
 import ExerciceVModel from '@/components/exercice-v-model.vue';
 import BugPreComputed from '@/components/bug-pre-computed.vue';
 import DebugComputed from '@/components/debug-computed.vue';
+import ExerciceReactivite from '@/components/exercice-reactivite.vue';
+import ExerciceStyleDynamic from '@/components/exercice-style-dynamic.vue';
+import ExerciceStyleDynamic2 from '@/components/exercice-style-dynamic-2.vue';
 </script>
 
 <template>
@@ -24,5 +27,8 @@ import DebugComputed from '@/components/debug-computed.vue';
     <ExerciceVModel />
     <BugPreComputed />
     <DebugComputed />
+    <ExerciceReactivite />
+    <ExerciceStyleDynamic />
+    <ExerciceStyleDynamic2 />
   </div>
 </template>
