@@ -15,8 +15,8 @@ export default defineComponent({
   name: 'ExerciceEventBinding',
   data() {
     return {
-      texte: "",
-      texteBis: ""
+      texte: "recopie 1 : ",
+      texteBis: "recopie 2 (echap): "
     };
   },
   methods: {

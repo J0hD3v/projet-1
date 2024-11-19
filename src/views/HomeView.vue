@@ -6,6 +6,7 @@ import ExerciceDataBinding from '@/components/exercice-dataBinding.vue';
 import Compteur from '@/components/compteur.vue';
 import DetectionEvent from '@/components/detection-event.vue';
 import ExerciceEventBinding from '@/components/exercice-eventBinding.vue';
+import ExerciceVModel from '@/components/exercice-v-model.vue';
 </script>
 
 <template>
@@ -18,5 +19,6 @@ import ExerciceEventBinding from '@/components/exercice-eventBinding.vue';
     <Compteur />
     <DetectionEvent />
     <ExerciceEventBinding />
+    <ExerciceVModel />
   </div>
 </template>
