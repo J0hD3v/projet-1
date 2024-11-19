@@ -12,6 +12,7 @@ import DebugComputed from '@/components/debug-computed.vue';
 import ExerciceReactivite from '@/components/exercice-reactivite.vue';
 import ExerciceStyleDynamic from '@/components/exercice-style-dynamic.vue';
 import ExerciceStyleDynamic2 from '@/components/exercice-style-dynamic-2.vue';
+import ExerciceFilmsList from '@/components/exercice-FilmsList.vue';
 </script>
 
 <template>
@@ -30,5 +31,6 @@ import ExerciceStyleDynamic2 from '@/components/exercice-style-dynamic-2.vue';
     <ExerciceReactivite />
     <ExerciceStyleDynamic />
     <ExerciceStyleDynamic2 />
+    <ExerciceFilmsList />
   </div>
 </template>
