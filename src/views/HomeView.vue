@@ -7,6 +7,8 @@ import Compteur from '@/components/compteur.vue';
 import DetectionEvent from '@/components/detection-event.vue';
 import ExerciceEventBinding from '@/components/exercice-eventBinding.vue';
 import ExerciceVModel from '@/components/exercice-v-model.vue';
+import BugPreComputed from '@/components/bug-pre-computed.vue';
+import DebugComputed from '@/components/debug-computed.vue';
 </script>
 
 <template>
@@ -20,5 +22,7 @@ import ExerciceVModel from '@/components/exercice-v-model.vue';
     <DetectionEvent />
     <ExerciceEventBinding />
     <ExerciceVModel />
+    <BugPreComputed />
+    <DebugComputed />
   </div>
 </template>
