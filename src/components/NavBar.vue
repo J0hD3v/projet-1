@@ -46,7 +46,7 @@ import { RouterLink } from 'vue-router'
                   <RouterLink
                     to="/component-comm-emit"
                     class="text-light text-decoration-none"
-                    >Compponent Comm Emit</RouterLink
+                    >Component Comm Emit</RouterLink
                   >
                 </li>
                 <li class="dropdown-item me-2">
@@ -78,6 +78,11 @@ import { RouterLink } from 'vue-router'
                   >
                 </li>
               </ul>
+            </li>
+            <li class="nav-item me-2 py-2">
+              <RouterLink to="/exercices" class="text-light text-decoration-none"
+                >Exercices</RouterLink
+              >
             </li>
           </ul>
         </div>

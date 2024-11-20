@@ -39,6 +39,16 @@ const router = createRouter({
       name: 'system-component',
       component: () => import('../views/SystemComponent.vue'),
     },
+    {
+      path: '/exercices',
+      name: 'exercices',
+      component: () => import('../views/Exercices.vue'),
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'default',
+      component: () => import('../views/NotFound.vue'),
+    },
   ],
 })
 
