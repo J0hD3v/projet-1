@@ -4,7 +4,7 @@
     <button v-on:click="addFilms(newFilm)">Ajouter</button>
     <ul>
       <li v-if="films.length > 0" v-for="(film,index) in films" :key="index">{{ film }}
-        <button @click="deleteFilm(index)">Supprimer {{ index }}</button>
+        <button @click="deleteFilm(index)">Supprimer {{ index + 1 }}</button>
       </li>
       <li v-else>Aucun film</li>
     </ul>
