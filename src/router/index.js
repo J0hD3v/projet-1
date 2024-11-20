@@ -45,6 +45,11 @@ const router = createRouter({
       component: () => import('../views/Exercices.vue'),
     },
     {
+      path: '/exoprops',
+      name: 'exoprops',
+      component: () => import('../views/ExoPropsView.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'default',
       component: () => import('../views/NotFound.vue'),

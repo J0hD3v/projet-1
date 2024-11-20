@@ -84,6 +84,11 @@ import { RouterLink } from 'vue-router'
                 >Exercices</RouterLink
               >
             </li>
+            <li class="nav-item me-2 py-2">
+              <RouterLink to="/exoprops" class="text-light text-decoration-none"
+                >Exo-props</RouterLink
+              >
+            </li>
           </ul>
         </div>
       </div>
