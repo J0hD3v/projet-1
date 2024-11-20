@@ -1,9 +1,10 @@
 <template>
   <article class="d-flex flex-column m-2 p-4 bg-secondary">
-    <input type="text" v-bind:value="leNom">
+    <h6 class="bg-light">{{ leNom }}</h6>
+    <h5>{{ premium == 1 ? "Ami Premium" : "Ami Nul" }}</h5>
     <button @click="switchDetailsVisible">{{ detailsVisible==false ? 'Voir Détails' : 'Masquer Détails' }}</button>
-    <input type="text" v-bind:value="lePhone" v-if="detailsVisible">
-    <input type="text" v-bind:value="leMail" v-if="detailsVisible">
+    <h6 v-if="detailsVisible" class="bg-light">{{ lePhone }}</h6>
+    <h6 v-if="detailsVisible" class="bg-light">{{ leMail }}</h6>
   </article>
 </template>
 
@@ -18,6 +19,7 @@ export default defineComponent({
     "leNom",
     "lePhone",
     "leMail",
+    "premium",
   ],
   /* emits: {
     // v-model event with validation
