@@ -50,6 +50,11 @@ const router = createRouter({
       component: () => import('../views/ExoPropsView.vue'),
     },
     {
+      path: '/exocomponentcomm',
+      name: 'exocomponentcomm',
+      component: () => import('../views/ExoComponentComm.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'default',
       component: () => import('../views/NotFound.vue'),

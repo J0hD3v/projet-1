@@ -89,6 +89,11 @@ import { RouterLink } from 'vue-router'
                 >Exo-props</RouterLink
               >
             </li>
+            <li class="nav-item me-2 py-2">
+              <RouterLink to="/exocomponentcomm" class="text-light text-decoration-none"
+                >Exo-Component-Communication</RouterLink
+              >
+            </li>
           </ul>
         </div>
       </div>

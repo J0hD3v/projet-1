@@ -2,9 +2,11 @@
   <article class="d-flex flex-column m-2 p-4 bg-secondary">
     <h6 class="bg-light">{{ leNom }}</h6>
     <h5>{{ premium == 1 ? "Ami Premium" : "Ami Nul" }}</h5>
-    <button @click="switchDetailsVisible">{{ detailsVisible==false ? 'Voir Détails' : 'Masquer Détails' }}</button>
-    <h6 v-if="detailsVisible" class="bg-light">{{ lePhone }}</h6>
-    <h6 v-if="detailsVisible" class="bg-light">{{ leMail }}</h6>
+    <button @click="switchDetailsVisible" class="bg-warning">{{ detailsVisible==false ? 'Voir Détails' : 'Masquer Détails' }}</button>
+    <section v-if="detailsVisible" class="bg-light p-1">
+      <h6>{{ lePhone }}</h6>
+      <h6>{{ leMail }}</h6>
+    </section>
   </article>
 </template>
 
